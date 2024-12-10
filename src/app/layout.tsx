@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Toaster } from "@/components/ui/toaster"
+import { Analytics } from '@vercel/analytics/next';
 import { Toaster as SonnerToaster } from "@/components/ui/sonner"
 import { ThemeProvider } from "@/components/providers/theme-provider"
 
@@ -41,6 +42,7 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+        <Analytics />
         <Toaster />
         <SonnerToaster />
       </body>
