@@ -14,6 +14,11 @@ export async function middleware(req: NextRequest) {
     const cookie = await cookies()
     const token = cookie.get(key)
 
+    // remove this if already index page
+    if (req.nextUrl.pathname === '/' && !token?.value) {
+        return NextResponse.redirect(new URL('/sign-in', req.url))
+    }
+
     // redirect to /sign-n if not authenticated
     if (!publicRoutes.includes(req.nextUrl.pathname) && !token?.value) {
         const response = NextResponse.redirect(new URL('/sign-in', req.url));
