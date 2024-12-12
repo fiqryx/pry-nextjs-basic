@@ -1,5 +1,14 @@
+"use client"
+
 import React from "react"
 import { cn } from "@/lib/utils"
+
+import { AuthProvider } from "./providers/auth-provider"
+import { AppSidebar } from "@/components/app-sidebar"
+import { Separator } from "@/components/ui/separator"
+import { ToggleTheme } from "@/components/toggle-theme"
+import { SearchCommand } from "./search-command"
+import { ToggleNotification } from "./toggle-notification"
 
 import {
     Breadcrumb,
@@ -13,12 +22,7 @@ import {
     SidebarProvider,
     SidebarTrigger,
 } from "@/components/ui/sidebar"
-import { AuthProvider } from "./providers/auth-provider"
-import { AppSidebar } from "@/components/app-sidebar"
-import { Separator } from "@/components/ui/separator"
-import { ToggleTheme } from "@/components/toggle-theme"
-import { SearchCommand } from "./search-command"
-import { ToggleNotification } from "./toggle-notification"
+
 
 
 export type Breadcrumb = {

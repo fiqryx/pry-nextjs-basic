@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { columns } from "./components/customer-columns";
 import { customers } from "@/types/customer";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { Input, InputIcon } from "@/components/ui/input";
 import { Datatable } from "@/components/pry/data-table";
 
 import {
@@ -56,12 +56,12 @@ export default function Page() {
                     <Input
                         type="search"
                         className="max-w-sm h-10"
-                        placeholder="Search customer"
-                        icon={{
-                            position: 'left',
-                            render: <SearchIcon className="size-5" />
-                        }}
-                    />
+                        placeholder="Search integration"
+                    >
+                        <InputIcon position="left">
+                            <SearchIcon className="size-5" />
+                        </InputIcon>
+                    </Input>
                     <Datatable
                         pagination
                         columns={columns}

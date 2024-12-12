@@ -49,7 +49,7 @@ export const columns: ColumnDef<Customer>[] = [
                             {name.slice(0, 2)}
                         </AvatarFallback>
                     </Avatar>
-                    <span className="font-semibold truncate">{name}</span>
+                    <span className="font-semibold">{name}</span>
                 </div>
             )
         },
@@ -59,7 +59,7 @@ export const columns: ColumnDef<Customer>[] = [
         enableSorting: false,
         enableHiding: false,
         header: ({ column }) => <DataTableColumnHeader column={column} title="Email" />,
-        cell: ({ row }) => <span className="truncate">{row.getValue('email')}</span>
+        cell: ({ row }) => <span>{row.getValue('email')}</span>
     },
     {
         accessorKey: 'location',
@@ -69,7 +69,7 @@ export const columns: ColumnDef<Customer>[] = [
         cell: ({ row }) => {
             const { city, country } = row.original
             return (
-                <span className="truncate">{`${city}, ${country}`}</span>
+                <span>{`${city}, ${country}`}</span>
             )
         }
     },
@@ -78,14 +78,14 @@ export const columns: ColumnDef<Customer>[] = [
         enableSorting: false,
         enableHiding: false,
         header: ({ column }) => <DataTableColumnHeader column={column} title="Phone" />,
-        cell: ({ row }) => <span className="truncate">{row.getValue('phone')}</span>
+        cell: ({ row }) => <span className="text-nowrap">{row.getValue('phone')}</span>
     },
     {
         accessorKey: "createdAt",
         enableSorting: false,
         enableHiding: false,
         header: ({ column }) => <DataTableColumnHeader column={column} title="Signed Up" />,
-        cell: ({ row }) => <span className="truncate">
+        cell: ({ row }) => <span className="text-nowrap">
             {row.original.createdAt?.toLocaleString('en', {
                 year: 'numeric',
                 month: 'short',
