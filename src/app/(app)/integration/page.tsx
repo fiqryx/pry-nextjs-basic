@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { Input } from "@/components/ui/input";
+import { Input, InputIcon } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { IntergrationCards } from "./components/integration-cards";
 import { IntegrationPagination } from "./components/integration-pagination";
@@ -57,11 +57,11 @@ export default function Page() {
                         type="search"
                         className="max-w-sm h-10"
                         placeholder="Search integration"
-                        icon={{
-                            position: 'left',
-                            render: <SearchIcon className="size-5" />
-                        }}
-                    />
+                    >
+                        <InputIcon position="left">
+                            <SearchIcon className="size-5" />
+                        </InputIcon>
+                    </Input>
                     <IntergrationCards className="auto-rows-min lg:grid-cols-3 gap-5" />
                     <IntegrationPagination />
                 </div>
