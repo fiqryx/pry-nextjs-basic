@@ -13,7 +13,7 @@ import {
 export const navigation = {
     teams: [
         {
-            name: "Pry Kit",
+            name: "Pry",
             logo: PyramidIcon,
             plan: "Startup",
         },
