@@ -1,10 +1,13 @@
 "use client"
-
-import * as React from "react"
+import React from "react"
+import { useAuthStore } from "@/stores/auth"
+import { navigation } from "@/config/navigation"
 
 import { NavMain } from "@/components/nav-main"
 import { NavUser } from "@/components/nav-user"
+import { SidebarOpt } from "@/components/sidebar-opt"
 import { TeamSwitcher } from "@/components/team-switcher"
+
 import {
   Sidebar,
   SidebarContent,
@@ -12,11 +15,10 @@ import {
   SidebarHeader,
   SidebarRail,
 } from "@/components/ui/sidebar"
-import { navigation } from "@/config/navigation"
-import { useAuthStore } from "@/stores/auth"
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const auth = useAuthStore()
+
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
@@ -29,6 +31,9 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         />
       </SidebarContent>
       <SidebarFooter>
+        <div className="p-1">
+          <SidebarOpt />
+        </div>
         <NavUser user={auth.user} />
       </SidebarFooter>
       <SidebarRail />

@@ -1,8 +1,23 @@
-## [Pry Kit - Nextjs](https://shadcn-kit-nextjs.vercel.app/)
+## [Pry](https://shadcn-kit-nextjs.vercel.app/)
 
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-[![Pry Kit - Nextjs](./public/thumbnail.png)](https://shadcn-kit-nextjs.vercel.app/)
+## Overview
+
+This is a starter template using the following stack:
+
+- Framework - [Next.js (App Router)](https://nextjs.org)
+- Language - [TypeScript](https://www.typescriptlang.org)
+- Deployment - [Vercel](https://vercel.com/docs/concepts/next.js/overview)
+- Styling - [Tailwind CSS](https://tailwindcss.com)
+- Components - [Shadcn UI](https://ui.shadcn.com/)
+- Analytics - [Vercel Analytics](https://vercel.com/analytics)
+
+This template uses the new Next.js App Router. This includes support for enhanced layouts, colocation of components, and styles.
+
+
+[![Pry](./public/thumbnail.png)](https://shadcn-kit-nextjs.vercel.app/)
+
 
 ## Pages
 
