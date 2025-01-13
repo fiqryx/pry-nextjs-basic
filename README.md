@@ -1,6 +1,4 @@
-## [Pry](https://shadcn-kit-nextjs.vercel.app/)
-
-![license](https://img.shields.io/badge/license-MIT-blue.svg)
+### [🖥️ Live Preview](https://shadcn-kit-nextjs.vercel.app/)
 
 ## Overview
 
@@ -8,9 +6,9 @@ This is a starter template using the following stack:
 
 - Framework - [Next.js (App Router)](https://nextjs.org)
 - Language - [TypeScript](https://www.typescriptlang.org)
-- Deployment - [Vercel](https://vercel.com/docs/concepts/next.js/overview)
 - Styling - [Tailwind CSS](https://tailwindcss.com)
 - Components - [Shadcn UI](https://ui.shadcn.com/)
+- Deployment - [Vercel](https://vercel.com/docs/concepts/next.js/overview)
 - Analytics - [Vercel Analytics](https://vercel.com/analytics)
 
 This template uses the new Next.js App Router. This includes support for enhanced layouts, colocation of components, and styles.
@@ -59,6 +57,24 @@ Within the download you'll find the following directories and files:
 		├── (app)
 		└── (auth)
 ```
+
+## Pro Version 🚀
+Upgrade to the Pro version for FREE and unlock a host of advanced features to supercharge your app development. With the Pro version, you gain access to tools and integrations that make creating awesome applications faster and easier!
+
+| Feature                        | Basic 			| Pro (Free)   		|
+|--------------------------------|------------------|------------------|
+| **External Auth Integrations** | ❌ 		 		| ✅ 			|
+| **Database Client (Supabase)** | ❌ 		 		| ✅ 			|
+| **Support Pages**              | Limited 			 | Complete feature set	|
+| **Internationalization (i18n)**| ❌ 				| ✅ 			|
+| **Mapbox Integration**         | ❌ 				| ✅ 			|
+| **Theme Color Support**        | ❌ 				| ✅ 			|
+| **Resizable Sidebar**          | ❌ 				| ✅ 			|
+| **Other Features**             | Limited 			 | Complete feature set |
+
+✨ Level up your experience—at no extra cost!
+
+### [![Upgrade to Pro](https://img.shields.io/badge/Pro_version-Click_Here-blue?style=for-the-badge)](https://pry-nextjs-pro.vercel.app/)
 
 ## Reporting Issues:
 
