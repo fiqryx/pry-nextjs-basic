@@ -59,9 +59,9 @@ Within the download you'll find the following directories and files:
 ```
 
 ## Pro Version 🚀
-Upgrade to the Pro version for FREE and unlock a host of advanced features to supercharge your app development. With the Pro version, you gain access to tools and integrations that make creating awesome applications faster and easier!
+Upgrade to the Pro version and unlock a host of advanced features to supercharge your app development. With the Pro version, you gain access to tools and integrations that make creating awesome applications faster and easier!
 
-| Feature                        | Basic 			| Pro (Free)   		|
+| Feature                        | Basic 			| Pro   		|
 |--------------------------------|------------------|------------------|
 | **External Auth Integrations** | ❌ 		 		| ✅ 			|
 | **Database Client (Supabase)** | ❌ 		 		| ✅ 			|
@@ -72,7 +72,7 @@ Upgrade to the Pro version for FREE and unlock a host of advanced features to su
 | **Resizable Sidebar**          | ❌ 				| ✅ 			|
 | **Other Features**             | Limited 			 | Complete feature set |
 
-✨ Level up your experience—at no extra cost!
+<!-- ✨ Level up your experience—at no extra cost! -->
 
 ### [![Upgrade to Pro](https://img.shields.io/badge/Pro_version-Click_Here-blue?style=for-the-badge)](https://pry-nextjs-pro.vercel.app/)
 
