@@ -1,4 +1,4 @@
-### [🖥️ Live Preview](https://shadcn-kit-nextjs.vercel.app/)
+### [🖥️ Live Preview](https://pry-nextjs-basic.vercel.app/)
 
 ## Overview
 
@@ -14,22 +14,22 @@ This is a starter template using the following stack:
 This template uses the new Next.js App Router. This includes support for enhanced layouts, colocation of components, and styles.
 
 
-[![Pry](./public/thumbnail.png)](https://shadcn-kit-nextjs.vercel.app/)
+[![Pry](./public/thumbnail.png)](https://pry-nextjs-basic.vercel.app/)
 
 
 ## Pages
 
-- [Dashboard](https://shadcn-kit-nextjs.vercel.app)
-- [Customers](https://shadcn-kit-nextjs.vercel.app/dashboard/customers)
-- [Integrations](https://shadcn-kit-nextjs.vercel.app/dashboard/integrations)
-- [Settings](https://shadcn-kit-nextjs.vercel.app/dashboard/settings)
-- [Account](https://shadcn-kit-nextjs.vercel.app/dashboard/account)
-- [Sign In](https://shadcn-kit-nextjs.vercel.app/sign-in)
-- [Sign Up](https://shadcn-kit-nextjs.vercel.app/sign-up)
+- [Dashboard](https://pry-nextjs-basic.vercel.app)
+- [Customers](https://pry-nextjs-basic.vercel.app/dashboard/customers)
+- [Integrations](https://pry-nextjs-basic.vercel.app/dashboard/integrations)
+- [Settings](https://pry-nextjs-basic.vercel.app/dashboard/settings)
+- [Account](https://pry-nextjs-basic.vercel.app/dashboard/account)
+- [Sign In](https://pry-nextjs-basic.vercel.app/sign-in)
+- [Sign Up](https://pry-nextjs-basic.vercel.app/sign-up)
 
 ## Quick start
 
-- Clone the repo: `git clone https://github.com/fiqryx/shadcn-kit-nextjs.git`
+- Clone the repo: `git clone https://github.com/fiqryx/pry-nextjs-basic.git`
 - Make sure your Node.js and npm versions are up to date
 - Install dependencies: `npm install` or `yarn`
 - Start the server: `npm run dev` or `yarn dev`
@@ -74,13 +74,13 @@ Upgrade to the Pro version and unlock a host of advanced features to supercharge
 
 <!-- ✨ Level up your experience—at no extra cost! -->
 
-### [![Upgrade to Pro](https://img.shields.io/badge/Pro_version-Click_Here-blue?style=for-the-badge)](https://pry-nextjs-pro.vercel.app/)
+### [![Upgrade to Pro](https://img.shields.io/badge/🚀_Pro_version-Click_Here-blue?style=for-the-badge)](https://pry-nextjs-pro.vercel.app/)
 
 ## Reporting Issues:
 
-- [Github Issues Page](https://github.com/fiqryx/shadcn-kit-nextjs/issues)
+- [Github Issues Page](https://github.com/fiqryx/pry-nextjs-basic/issues)
 
 
 ## License
 
-- Licensed under [MIT](https://github.com/fiqryx/shadcn-kit-nextjs/blob/main/LICENSE)
+- Licensed under [MIT](https://github.com/fiqryx/pry-nextjs-basic/blob/main/LICENSE)
