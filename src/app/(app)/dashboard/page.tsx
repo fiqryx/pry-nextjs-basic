@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+import { createMetadata } from "@/lib/metadata";
+
 import { Dashboard } from "@/components/app-dashboard"
 import { DashboardWidgets } from "./components/dashboard-widgets";
 import { DashboardSales } from "./components/dahsboard-sales";
@@ -6,10 +7,7 @@ import { DashboardTraffic } from "./components/dashboard-traffic";
 import { DashboardProducts } from "./components/dashboard-products";
 import { DashboardOrders } from "./components/dashboard-orders";
 
-export const metadata: Metadata = {
-  title: `Overview | ${process.env.APP_NAME}`,
-  description: "",
-};
+export const metadata = createMetadata({ title: 'Overview' })
 
 export default function Page() {
   return (

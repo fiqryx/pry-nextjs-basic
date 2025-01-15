@@ -1,13 +1,11 @@
 import Link from "next/link";
-import { Metadata } from "next";
+import Image from "next/image";
+import { createMetadata } from "@/lib/metadata";
+
 import { ArrowLeftIcon } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
-import Image from "next/image";
 
-export const metadata: Metadata = {
-    title: `404: This page could not be found | ${process.env.APP_NAME}`,
-    description: "",
-};
+export const metadata = createMetadata({ title: '404: This page could not be found' })
 
 
 export default function NotFound() {

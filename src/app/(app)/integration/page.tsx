@@ -1,10 +1,13 @@
-import type { Metadata } from "next";
+import { createMetadata } from "@/lib/metadata";
 
-import { Input, InputIcon } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { IntergrationCards } from "./components/integration-cards";
 import { IntegrationPagination } from "./components/integration-pagination";
 
+import {
+    Input,
+    InputIcon
+} from "@/components/ui/input";
 import {
     Breadcrumb,
     Dashboard
@@ -22,10 +25,7 @@ const breadcrumb: Breadcrumb[] = [
     { label: 'Integrations' },
 ]
 
-export const metadata: Metadata = {
-    title: `Integrations | ${process.env.APP_NAME}`,
-    description: "",
-}
+export const metadata = createMetadata({ title: 'Integrations' })
 
 export default function Page() {
     return (

@@ -14,7 +14,6 @@ export function AuthProvider({ children }: Props) {
 
     async function checkSession() {
         try {
-            logger.debug("checking session")
             authStore.set({ loading: true })
 
             const { data, error } = await getUser()

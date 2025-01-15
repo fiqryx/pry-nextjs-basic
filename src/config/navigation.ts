@@ -15,7 +15,7 @@ export const navigation = {
         {
             name: "Pry",
             logo: PyramidIcon,
-            plan: "Startup",
+            plan: "Lite",
         },
         {
             name: "Acme Corp.",

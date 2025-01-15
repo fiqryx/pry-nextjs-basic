@@ -1,4 +1,4 @@
-### [🖥️ Live Preview](https://pry-nextjs-basic.vercel.app/)
+### [🖥️ Live Preview](https://pry-nextjs-lite.vercel.app/)
 
 ## Overview
 
@@ -14,22 +14,22 @@ This is a starter template using the following stack:
 This template uses the new Next.js App Router. This includes support for enhanced layouts, colocation of components, and styles.
 
 
-[![Pry](./public/thumbnail.png)](https://pry-nextjs-basic.vercel.app/)
+[![Pry](./public/thumbnail.png)](https://pry-nextjs-lite.vercel.app/)
 
 
 ## Pages
 
-- [Dashboard](https://pry-nextjs-basic.vercel.app)
-- [Customers](https://pry-nextjs-basic.vercel.app/dashboard/customers)
-- [Integrations](https://pry-nextjs-basic.vercel.app/dashboard/integrations)
-- [Settings](https://pry-nextjs-basic.vercel.app/dashboard/settings)
-- [Account](https://pry-nextjs-basic.vercel.app/dashboard/account)
-- [Sign In](https://pry-nextjs-basic.vercel.app/sign-in)
-- [Sign Up](https://pry-nextjs-basic.vercel.app/sign-up)
+- [Dashboard](https://pry-nextjs-lite.vercel.app/dashboard)
+- [Customers](https://pry-nextjs-lite.vercel.app/dashboard/customers)
+- [Integrations](https://pry-nextjs-lite.vercel.app/dashboard/integrations)
+- [Settings](https://pry-nextjs-lite.vercel.app/dashboard/settings)
+- [Account](https://pry-nextjs-lite.vercel.app/dashboard/account)
+- [Sign In](https://pry-nextjs-lite.vercel.app/sign-in)
+- [Sign Up](https://pry-nextjs-lite.vercel.app/sign-up)
 
 ## Quick start
 
-- Clone the repo: `git clone https://github.com/fiqryx/pry-nextjs-basic.git`
+- Clone the repo: `git clone https://github.com/fiqryx/pry-nextjs-lite.git`
 - Make sure your Node.js and npm versions are up to date
 - Install dependencies: `npm install` or `yarn`
 - Start the server: `npm run dev` or `yarn dev`
@@ -58,10 +58,10 @@ Within the download you'll find the following directories and files:
 		└── (auth)
 ```
 
-## Pro Version 🚀
+## Pro Version
 Upgrade to the Pro version and unlock a host of advanced features to supercharge your app development. With the Pro version, you gain access to tools and integrations that make creating awesome applications faster and easier!
 
-| Feature                        | Basic 			| Pro   		|
+| Feature                        | Lite 			| Pro   		|
 |--------------------------------|------------------|------------------|
 | **External Auth Integrations** | ❌ 		 		| ✅ 			|
 | **Database Client (Supabase)** | ❌ 		 		| ✅ 			|

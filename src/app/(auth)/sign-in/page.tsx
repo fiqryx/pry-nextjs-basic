@@ -1,5 +1,7 @@
 import Link from "next/link"
-import { Metadata } from "next"
+import { createMetadata } from "@/lib/metadata"
+import { SignInForm } from "./components/sign-in-form"
+
 import {
     Card,
     CardContent,
@@ -7,12 +9,8 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
-import { SignInForm } from "./components/sign-in-form"
 
-export const metadata: Metadata = {
-    title: "Sign In | " + process.env.APP_NAME,
-    description: "Authentication forms built using the components.",
-}
+export const metadata = createMetadata({ title: 'Sign in' })
 
 export default function Page() {
     return (
