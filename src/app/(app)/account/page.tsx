@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
+import { createMetadata } from "@/lib/metadata";
+
+import { AccountInfo } from "./components/account-info";
+import { AccountForm } from "./components/account-form";
 
 import {
     Breadcrumb,
     Dashboard
 } from "@/components/app-dashboard"
-import { AccountInfo } from "./components/account-info";
-import { AccountForm } from "./components/account-form";
 
 
 const breadcrumb: Breadcrumb[] = [
@@ -13,10 +14,7 @@ const breadcrumb: Breadcrumb[] = [
     { label: 'Account' },
 ]
 
-export const metadata: Metadata = {
-    title: `Account | ${process.env.APP_NAME}`,
-    description: "",
-}
+export const metadata = createMetadata({ title: 'Account' })
 
 export default function Page() {
     return (

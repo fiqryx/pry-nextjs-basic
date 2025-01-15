@@ -1,10 +1,13 @@
-import type { Metadata } from "next";
-import { columns } from "./components/customer-columns";
+import { createMetadata } from "@/lib/metadata";
 import { customers } from "@/types/customer";
 import { Button } from "@/components/ui/button";
-import { Input, InputIcon } from "@/components/ui/input";
+import { columns } from "./components/customer-columns";
 import { Datatable } from "@/components/pry/data-table";
 
+import {
+    Input,
+    InputIcon
+} from "@/components/ui/input";
 import {
     Breadcrumb,
     Dashboard
@@ -22,10 +25,7 @@ const breadcrumb: Breadcrumb[] = [
     { label: 'Customers' },
 ]
 
-export const metadata: Metadata = {
-    title: `Customers | ${process.env.APP_NAME}`,
-    description: "",
-};
+export const metadata = createMetadata({ title: 'Customers' })
 
 export default function Page() {
     return (
@@ -36,7 +36,7 @@ export default function Page() {
                         <h1 className="text-2xl sm:text-4xl font-semibold">
                             Customers
                         </h1>
-                        <Button className="px-6 sm:h-10 sm:px-6">
+                        <Button>
                             <PlusIcon />
                             Add
                         </Button>
@@ -55,7 +55,7 @@ export default function Page() {
                 <div className="flex flex-col gap-2">
                     <Input
                         type="search"
-                        className="max-w-sm h-10"
+                        className="max-w-fit sm:max-w-sm h-10"
                         placeholder="Search integration"
                     >
                         <InputIcon position="left">

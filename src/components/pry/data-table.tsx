@@ -104,7 +104,7 @@ export function Datatable<TData, TValue>({
     })
 
     return (
-        <div {...props} className={cn('w-full', className)}>
+        <div {...props} className={cn('w-full max-w-sm sm:max-w-full', className)}>
             <div className="rounded-md border">
                 <Table>
                     {!hideHeader && (
@@ -183,7 +183,7 @@ export function DataTableColumnHeader<TData, TValue>({
     }
 
     return (
-        <div className={cn("flex items-center space-x-2", className)}>
+        <div className={cn("flex items-center gap-2", className)}>
             <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                     <Button
@@ -232,7 +232,7 @@ export function DataTablePagination<TData>({
     pageSizeOptions = [10, 20, 30, 40, 50],
 }: DataTablePaginationProps<TData>) {
     return (
-        <div className="flex items-center justify-between p-2">
+        <div className="flex items-center justify-between flex-wrap p-2 gap-2">
             <div className="flex-1 text-sm text-muted-foreground">
                 {`${table.getFilteredSelectedRowModel().rows.length} of ${table.getFilteredRowModel().rows.length} row(s) selected`}
             </div>

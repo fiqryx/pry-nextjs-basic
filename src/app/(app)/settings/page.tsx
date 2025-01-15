@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
+import { createMetadata } from "@/lib/metadata";
+
+import { SettingsPassword } from "./components/settings-password";
+import { SettingsNotification } from "./components/settings-notification";
 
 import {
     Breadcrumb,
     Dashboard
 } from "@/components/app-dashboard"
-import { SettingsNotification } from "./components/settings-notification";
-import { SettingsPassword } from "./components/settings-password";
 
 
 const breadcrumb: Breadcrumb[] = [
@@ -13,10 +14,7 @@ const breadcrumb: Breadcrumb[] = [
     { label: 'Settings' },
 ]
 
-export const metadata: Metadata = {
-    title: `Settings | ${process.env.APP_NAME}`,
-    description: "",
-}
+export const metadata = createMetadata({ title: 'Settings' })
 
 export default function Page() {
     return (

@@ -43,13 +43,13 @@ export const columns: ColumnDef<Customer>[] = [
 
             return (
                 <div className="flex items-center gap-2 px-1 py-1.5">
-                    <Avatar className="h-10 w-10 rounded-full text-sm">
+                    <Avatar className="size-10 rounded-full text-sm">
                         <AvatarImage src={photo} alt={name} />
                         <AvatarFallback className="rounded-full">
                             {name.slice(0, 2)}
                         </AvatarFallback>
                     </Avatar>
-                    <span className="font-semibold">{name}</span>
+                    <p className="font-semibold">{name}</p>
                 </div>
             )
         },
@@ -59,7 +59,11 @@ export const columns: ColumnDef<Customer>[] = [
         enableSorting: false,
         enableHiding: false,
         header: ({ column }) => <DataTableColumnHeader column={column} title="Email" />,
-        cell: ({ row }) => <span>{row.getValue('email')}</span>
+        cell: ({ row }) => (
+            <div className="w-32 sm:w-full">
+                <p className="truncate ">{row.getValue('email')}</p>
+            </div>
+        )
     },
     {
         accessorKey: 'location',
@@ -68,9 +72,8 @@ export const columns: ColumnDef<Customer>[] = [
         header: ({ column }) => <DataTableColumnHeader column={column} title="Location" />,
         cell: ({ row }) => {
             const { city, country } = row.original
-            return (
-                <span>{`${city}, ${country}`}</span>
-            )
+
+            return `${city}, ${country}`
         }
     },
     {
@@ -85,12 +88,12 @@ export const columns: ColumnDef<Customer>[] = [
         enableSorting: false,
         enableHiding: false,
         header: ({ column }) => <DataTableColumnHeader column={column} title="Signed Up" />,
-        cell: ({ row }) => <span className="text-nowrap">
+        cell: ({ row }) => <p className="text-nowrap">
             {row.original.createdAt?.toLocaleString('en', {
                 year: 'numeric',
                 month: 'short',
                 day: 'numeric',
             })}
-        </span>
+        </p>
     },
 ]

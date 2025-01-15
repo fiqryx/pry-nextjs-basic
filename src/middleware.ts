@@ -7,7 +7,12 @@ export const config = {
     matcher: '/((?!api|static|.*\\..*|_next).*)'
 }
 
-const publicRoutes = ['/', '/sign-in', '/sign-up']
+const publicRoutes = [
+    '/',
+    '/sign-in',
+    '/sign-up',
+    '/reset-password'
+]
 
 export async function middleware(req: NextRequest) {
     const key = process.env.AUTH_COOKIE_KEY as string

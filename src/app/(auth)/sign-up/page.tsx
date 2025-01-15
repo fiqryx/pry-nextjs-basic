@@ -1,4 +1,7 @@
-import { Metadata } from "next"
+import Link from "next/link"
+import { createMetadata } from "@/lib/metadata"
+import { SingUpForm } from "./components/sign-up-form"
+
 import {
     Card,
     CardContent,
@@ -6,13 +9,8 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
-import Link from "next/link"
-import { SingUpForm } from "./components/sign-up-form"
 
-export const metadata: Metadata = {
-    title: "Sign In | " + process.env.APP_NAME,
-    description: "Authentication forms built using the components.",
-}
+export const metadata = createMetadata({ title: 'Sign up' })
 
 export default function Page() {
     return (
@@ -20,7 +18,7 @@ export default function Page() {
             <Card className="mx-auto max-w-sm">
                 <CardHeader>
                     <CardTitle className="text-2xl">
-                        Sign Up
+                        Sign up
                     </CardTitle>
                     <CardDescription>
                         Enter your email below to sign up to your account

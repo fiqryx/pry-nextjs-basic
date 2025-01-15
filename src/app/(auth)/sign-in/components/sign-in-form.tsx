@@ -2,6 +2,7 @@
 
 import { z } from "zod"
 import React from "react"
+import Link from "next/link"
 import { cn } from "@/lib/utils"
 import { useForm } from "react-hook-form"
 import { useToast } from "@/hooks/use-toast"
@@ -106,28 +107,38 @@ export function SignInForm({
                   </FormItem>
                 )}
               />
-              <FormField
-                control={form.control}
-                name="password"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="sr-only">
-                      Password
-                    </FormLabel>
-                    <FormControl>
-                      <Input
-                        type="password"
-                        disabled={isLoading}
-                        placeholder="Enter password"
-                        {...field}
-                      />
-                    </FormControl>
-                    <FormDescription>
-                    </FormDescription>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
+              <div className="grid">
+                <div className="flex items-center gap-4">
+                  <Link
+                    href="/reset-password"
+                    className="ml-auto inline-block text-sm text-center underline-offset-4 hover:underline"
+                  >
+                    Forgot your password?
+                  </Link>
+                </div>
+                <FormField
+                  control={form.control}
+                  name="password"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel className="sr-only">
+                        Password
+                      </FormLabel>
+                      <FormControl>
+                        <Input
+                          type="password"
+                          disabled={isLoading}
+                          placeholder="Enter password"
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormDescription>
+                      </FormDescription>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+              </div>
             </div>
             <Button type="submit" disabled={isLoading}>
               {isLoading && (
