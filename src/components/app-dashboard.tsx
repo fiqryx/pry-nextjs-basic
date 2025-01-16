@@ -3,6 +3,8 @@
 import React from "react"
 import { cn } from "@/lib/utils"
 
+import { Icons } from "./icons"
+import { ExternalLink } from "./external-link"
 import { AuthProvider } from "./providers/auth-provider"
 import { AppSidebar } from "@/components/app-sidebar"
 import { Separator } from "@/components/ui/separator"
@@ -22,8 +24,6 @@ import {
     SidebarProvider,
     SidebarTrigger,
 } from "@/components/ui/sidebar"
-
-
 
 export type Breadcrumb = {
     label: string
@@ -77,6 +77,13 @@ export function Dashboard({
                             <SearchCommand className="hidden sm:flex" />
                             <ToggleNotification />
                             <ToggleTheme />
+                            <ExternalLink
+                                target="_blank"
+                                title="Github"
+                                href={process.env.NEXT_PUBLIC_REPO_URL ?? "#"}
+                            >
+                                <Icons.gitHub />
+                            </ExternalLink>
                         </div>
                     </header>
                     <div className={cn('flex flex-1 flex-col gap-4 p-4', className)}>
