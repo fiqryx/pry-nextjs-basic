@@ -17,6 +17,19 @@ This template uses the new Next.js App Router. This includes support for enhance
 [![Pry](./public/thumbnail.png)](https://pry-nextjs-lite.vercel.app/)
 
 
+## 🔥 Flexible Variants for Every Workflow
+
+Seamlessly integrate into your favorite tech stack with optimized variants designed for performance and simplicity. Choose the setup that fits your development flow:
+
+| 🚀 **Framework**               | 🌐 **Repository**                                      |
+|--------------------------------|--------------------------------------------------------|
+| **Next.js Variant** – SSR Ready & SEO Optimized ⚡ | [**pry-nextjs-lite**](https://github.com/fiqryx/pry-nextjs-lite) |
+| **Vite Variant** – Lightning Fast & Lightweight ⚡ | [**pry-vite-lite**](https://github.com/fiqryx/pry-vite-lite)     |
+
+> Build sleek, responsive UIs with ease, whether you're scaling with **Next.js** or blazing ahead with **Vite**. Craft powerful and lightweight interfaces with **Pry Lite** ✨
+---
+
+
 ## Pages
 
 - [Dashboard](https://pry-nextjs-lite.vercel.app/dashboard)
@@ -26,6 +39,7 @@ This template uses the new Next.js App Router. This includes support for enhance
 - [Account](https://pry-nextjs-lite.vercel.app/dashboard/account)
 - [Sign In](https://pry-nextjs-lite.vercel.app/sign-in)
 - [Sign Up](https://pry-nextjs-lite.vercel.app/sign-up)
+
 
 ## Quick start
 
@@ -57,6 +71,7 @@ Within the download you'll find the following directories and files:
 		├── (app)
 		└── (auth)
 ```
+---
 
 ## Pro Version
 Upgrade to the Pro version and unlock a host of advanced features to supercharge your app development. With the Pro version, you gain access to tools and integrations that make creating awesome applications faster and easier!
@@ -76,11 +91,12 @@ Upgrade to the Pro version and unlock a host of advanced features to supercharge
 
 ### [![Upgrade to Pro](https://img.shields.io/badge/🚀_Pro_version-Click_Here-blue?style=for-the-badge)](https://pry-nextjs-pro.vercel.app/)
 
+
 ## Reporting Issues:
 
-- [Github Issues Page](https://github.com/fiqryx/pry-nextjs-basic/issues)
+- [Github Issues Page](https://github.com/fiqryx/pry-nextjs-lite/issues)
 
 
 ## License
 
-- Licensed under [MIT](https://github.com/fiqryx/pry-nextjs-basic/blob/main/LICENSE)
+- Licensed under [MIT](https://github.com/fiqryx/pry-nextjs-lite/blob/main/LICENSE)
