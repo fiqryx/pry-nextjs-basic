@@ -8,6 +8,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+
 import {
     Form,
     FormControl,
@@ -159,7 +160,7 @@ export function SingUpForm() {
                 <Button type="submit" className="w-full">
                     Create account
                 </Button>
-                <Button variant="outline" className="w-full">
+                <Button type="button" variant="outline" className="w-full">
                     Sign up with GitHub
                 </Button>
             </form>
