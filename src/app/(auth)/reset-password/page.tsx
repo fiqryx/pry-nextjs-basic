@@ -27,22 +27,20 @@ export default function Page() {
                     </CardDescription>
                 </CardHeader>
                 <CardContent>
-                    <form>
-                        <div className="flex flex-col gap-6">
-                            <div className="grid gap-2">
-                                <Label htmlFor="email" className="sr-only">Email</Label>
-                                <Input
-                                    required
-                                    id="email"
-                                    type="email"
-                                    placeholder="Enter your email"
-                                />
-                            </div>
-                            <Button type="submit" className="w-full">
-                                Send
-                            </Button>
+                    <div className="flex flex-col gap-6">
+                        <div className="grid gap-2">
+                            <Label htmlFor="email" className="sr-only">Email</Label>
+                            <Input
+                                required
+                                id="email"
+                                type="email"
+                                placeholder="Enter your email"
+                            />
                         </div>
-                    </form>
+                        <Button type="submit" className="w-full">
+                            Send
+                        </Button>
+                    </div>
                 </CardContent>
             </Card>
         </div>
